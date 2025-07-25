@@ -8,9 +8,7 @@ class UserInfo extends Component {
 	constructor(props) {
 		super(props)
 
-		this.state = {
-			user: props.user,
-		}
+		this.state = {}
 	}
 
 	getFullName = (user) => {
@@ -19,7 +17,7 @@ class UserInfo extends Component {
 	}
 
 	render() {
-		const { user } = this.state
+		const { user } = this.props
 
 		const { gender, email } = user
 
