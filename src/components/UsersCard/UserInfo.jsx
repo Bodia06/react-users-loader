@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
-import { countries } from '../../api/countryFlags.js'
+import { countries } from './../../constans'
 import styles from './UserInfo.module.sass'
 import PropTypes from 'prop-types'
 
