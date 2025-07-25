@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, use } from 'react'
 import PropTypes from 'prop-types'
 import loaderUsers from '../../api/loaderUsers'
 import UserInfo from './UserInfo'
@@ -60,7 +60,7 @@ export default class UsersCard extends Component {
 				{!error && !isFetching && (
 					<div className={styles.userCardContainer}>
 						{users.map((user) => (
-							<UserInfo key={user.id} user={user} />
+							<UserInfo key={user.id?.value} user={user} />
 						))}
 					</div>
 				)}
