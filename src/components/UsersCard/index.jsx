@@ -51,9 +51,11 @@ export default class UsersCard extends Component {
 
 		return (
 			<>
-				{error && <div className='userCardContainerError'>{this.error}</div>}
+				{error && (
+					<div className={styles.userCardContainerError}>{this.error}</div>
+				)}
 				{isFetching && (
-					<div className='userCardContainerLoading'>Loading...</div>
+					<div className={styles.userCardContainerLoading}>Loading...</div>
 				)}
 				{!error && !isFetching && (
 					<div className={styles.userCardContainer}>
