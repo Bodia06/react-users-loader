@@ -57,8 +57,8 @@ export default class UsersCard extends Component {
 				)}
 				{!error && !isFetching && (
 					<div className={styles.userCardContainer}>
-						{users.map((user, index) => (
-							<UserInfo key={index} user={user} />
+						{users.map((user) => (
+							<UserInfo key={user.id} user={user} />
 						))}
 					</div>
 				)}
